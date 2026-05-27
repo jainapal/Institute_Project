@@ -1,38 +1,4 @@
 import "./globals.css";
-// import { Poppins, Inter } from "next/font/google";
-
-/*
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-heading",
-  weight: ["400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-});
-
-export const metadata = {
-  title: "JEEvant Classes",
-  description: "Best Coaching Institute for JEE, NEET & CBSE Preparation",
-};
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body
-        className={`${poppins.variable} ${inter.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
-}
-  */
-
-
-
 import { Playfair_Display, Inter } from "next/font/google";
 
 const playfair = Playfair_Display({
@@ -47,11 +13,30 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "JEEvant Classes",
+  title: "JEEvant Classes | JEE Mains, Jee Advance, NEET & CBSE Coaching Institute",
   description:
-    "Best Coaching Institute for JEE, NEET & CBSE Preparation",
-};
+    "JEEvant Classes provides expert coaching for JEE, NEET and CBSE students with experienced faculty, excellent results and personal guidance.",
 
+  keywords: [
+    "JEE coaching",
+    "NEET coaching",
+    "CBSE coaching",
+    "JEEvant Classes",
+    "Coaching Institute",
+    "Noida coaching",
+    "Noida Sec-104, Sec-110, Sec-93 coaching"
+  ],
+
+  openGraph: {
+    title: "JEEvant Classes",
+    description:
+      "Best Coaching Institute for JEE, NEET & CBSE Preparation",
+    url: "https://www.jeevantclasses.com",
+    siteName: "JEEvant Classes",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
